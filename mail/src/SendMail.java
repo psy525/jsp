@@ -8,7 +8,7 @@ public class SendMail {
     final String ENCODING = "UTF-8";
     final String PORT ="465";
     final String SMTPHOST = "smtp.naver.com";
-    final String TO = "dm0608@naver.com";
+    final String TO = "dudtjs1902@naver.com";
 
     public Session setting(Properties props, String user_name, String password) {
         Session session = null;
@@ -45,7 +45,7 @@ public class SendMail {
         Message msg = new MimeMessage(session);
 
         try{
-            msg.setFrom(new InternetAddress("psy19953126@naver.com", "관리자", ENCODING));
+            msg.setFrom(new InternetAddress("psy19953126@naver.com", "박선영", ENCODING));
             msg.addRecipient(Message.RecipientType.TO, new InternetAddress(TO));
             msg.setSubject(title);
             msg.setContent(content, "text/html; charset=utf-8");
