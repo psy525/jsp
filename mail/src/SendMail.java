@@ -8,7 +8,7 @@ public class SendMail {
     final String ENCODING = "UTF-8";
     final String PORT ="465";
     final String SMTPHOST = "smtp.naver.com";
-    final String TO = "dudtjs1902@naver.com";
+    final String TO = "dm0608@naver.com";
 
     public Session setting(Properties props, String user_name, String password) {
         Session session = null;
